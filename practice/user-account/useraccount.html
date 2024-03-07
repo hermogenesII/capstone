@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+  <link rel="stylesheet" href="user-account.css">
+  <link rel="stylesheet" href="useraccount.css">
+
+  <title>My Account</title>
+</head>
+
+<body>
+
+  <aside class="myaccount-container">
+    <div class="system-title">
+      <a href="#index"><img src="dd.png" alt=""></a>
+    </div>
+    <nav class="myaccount-tabs">
+      <div class="sidebar-menu">
+      </div>
+      <div>
+        <button class="myaccount-tablinks" onclick="openMyAccount(event, 'my-profile')" >
+          <p><i class="fa-solid fa-user"></i> Account</p>
+        </button>
+        <button class="myaccount-tablinks" onclick="openMyAccount(event, 'my-password')"id="defaultOpen">
+          <p><i class="fa-solid fa-key"></i> Password</p>
+        </button>
+        <button class="myaccount-tablinks" onclick="openMyAccount(event, 'my-monitor')">
+          <p><i class="fa-solid fa-square-poll-horizontal"></i> Monitor</p>
+        </button>
+        <button class="myaccount-tablinks" onclick="openMyAccount(event, 'my-message')">
+          <p><i class="fa-solid fa-message"></i> Message</p>
+        </button>
+        <button class="myaccount-tablinks" onclick="openMyAccount(event, 'my-service')" >
+          <p><i class="fa-solid fa-message"></i> My Services</p>
+        </button>
+        <button class="myaccount-tablinks" onclick="openMyAccount(event, 'my-subscription')" >
+          <p><i class="fa-solid fa-message"></i> Subscription</p>
+        </button>
+        <button class="myaccount-tablinks" onclick="openMyAccount(event, 'my-payment')" >
+          <p><i class="fa-solid fa-message"></i> Payment</p>
+        </button>
+        <button class="myaccount-tablinks" onclick="openMyAccount(event, 'my-proof')" >
+          <p><i class="fa-solid fa-message"></i> Proof</p>
+      </button>
+      </div>
+      <div class="myaccount-tabs-push">
+        <button class="myaccount-tablinks" onclick="openMyAccount(event, 'my-logout')">
+          <p><i class="fa-solid fa-lock"></i> Logout</p>
+        </button>
+        <button class="myaccount-tablinks" onclick="openMyAccount(event, 'my-delete-account')">
+          <p><i class="fa-solid fa-trash"></i> Delete-account</p>
+        </button>
+      </div>
+    </nav>
+  </aside>
+
+  <section class="myaccount-tabcontent" id="my-profile">
+    <div class="my-profile-info">
+      <h1><i class="fa-solid fa-user"></i> My Profile</h1>
+      <p>Manage and Protect your account</p>
+      <hr>
+      <div>
+        <img src="4.png">
+        <button>Select image</button>
+      </div>
+      <ul>
+        <li><label for="username"><i class="fa-solid fa-user"></i> Username:</label> <input type="text" class="username"></li>
+        <li><label for="name"><i class="fa-solid fa-user"></i> Name:</label> <input type="text" class="name"></li>
+        <li><label for="email"><i class="fa-solid fa-envelope"></i> Email:</label>
+          <p class="email">hermogenes.magsino2@gmail.com</p> <a href="#"><u>Change</u></a>
+        </li>
+        <li><label for="phone"><i class="fa-solid fa-phone"></i> Phone no.:</label>
+          <p class="phone">09876543210</p> <a href="#"><u>Change</u></a>
+        </li>
+        <li><label for="address"><i class="fa-solid fa-location-dot"></i> Address:</label>
+          <p class="address">Dolores Santa Cruz Marinduque</p> <a href="#"><u>Change</u></a>
+        </li>
+        <li><label for="gender"><i class="fa-solid fa-venus-mars"></i> Gender:</label>
+          <input type="radio" id="male" name="gender" value="Male">
+          <label for="male"> Male</label>
+          <input type="radio" id="female" name="gender" value="Female">
+          <label for="female"> Female</label>
+          <input type="radio" id="other" name="gender" value="Other">
+          <label for="other"> Other</label>
+        </li>
+        <li>
+          <label for="dateob"><i class="fa-solid fa-calendar-days"></i> Date of Birth:</label>
+          <input type="date" id="dateob" name="dateob">
+        </li>
+        <li><input type="submit" class="save-btn" value="Save"></li>
+      </ul>
+    </div>
+  </section>
+  <!--Password-->
+  <section class="myaccount-tabcontent" id="my-password">
+    <h1><i class="fa-solid fa-key"></i> Password</h1>
+    <h3>Change password</h3>
+    <p>It's a good idea to use a strong password that you're not using elsewhere</p>
+    <hr>
+    <form action="#">
+      <div>
+        <img src="secc.gif" alt="">
+        <label for="epassword">Current Password: </label><input type="text" class="epassword">
+        <label for="npassword">New Password: </label><input type="text" class="npassword">
+        <label for="cpassword">Confirm Password: </label><input type="text" class="cpassword">
+      </div>
+      <a href="#"><u>Forget Password?</u></a>
+      <hr>
+      <input type="button" value="Save Changes" class="spass">
+      <input type="button" value="Close" class="cpass">
+    </form>
+  </section>
+  <!-- Monitor -->
+  <section class="myaccount-tabcontent" id="my-monitor"></section>
+
+  <!-- Subscription -->
+  <section class="myaccount-tabcontent" id="my-subscription">
+    <h1><i class="fa-solid fa-receipt"></i> Your Descripiton</h1>
+    <p>Premium has even more features to help you keep calm and organize.</p>
+    <hr>
+  <div class="app-container">
+      <img src="receipt.png" alt="image to be insert!!!">
+      <div class="app-dropdown">
+          <select name="data" id="">
+              <option value="">Services</option>
+          </select>
+          <select name="data" id="sub">
+              <option value="">Sub-Categories</option>
+          </select>
+      </div>
+      <input type="text" class="description-box">
+      <input type="button" value="Apply" class="spass">
+  </div>
+  </section>
+
+  <section class="myaccount-tabcontent" id="my-payment">
+    <h1><i class="fa-solid fa-receipt"></i> Payment</h1>
+    <p>Premium has even more features to help you keep calm and organize.</p>
+    <hr>
+    <div class="payment-list">
+      <div class="subs-list">
+        <h2><i class="fa-solid fa-credit-card"></i> 1 Month</h2>
+        <img src="1.png" alt="picture">
+        <p>For 30 days, you will have full access to the website's features.</p>
+        <div class="ammount">
+          <p>₱ 100.00</p>
+        </div>
+        <div class="pay">
+          <p>Gcahs/Paymaya</p>
+        </div>
+        <input type="button" value="Payment" class="spass">
+      </div>
+      <div class="subs-list">
+        <h2><i class="fa-regular fa-credit-card"></i> 3 Months</h2>
+        <img src="2.png" alt="picture">
+        <p>For 4 months, you will have full access to the website's features.</p>
+        <div class="ammount">
+          <p>₱ 300.00</p>
+        </div>
+        <div class="pay">
+          <p>Gcahs/Paymaya</p>
+        </div>
+        <input type="button" value="Payment" class="spass">
+      </div>
+      <div class="subs-list">
+        <h2><i class="fa-solid fa-credit-card"></i> 1 Year</h2>
+        <img src="3.png" alt="picture">
+        <p>For 12 months, you will have full access to the website's features.</p>
+        <div class="ammount">
+          <p>₱ 1000.00</p>
+        </div>
+        <div class="pay">
+          <p>Gcahs/Paymaya</p>
+        </div>
+        <input type="button" value="Payment" class="spass">
+      </div>
+    </div>
+  </section>
+  <!--Proof of Payment-->
+  <section class="myaccount-tabcontent" id="my-proof">
+    <h1>Proof of Payment</h1>
+    <p>Lorem ipsum, dolor sit amet 
+        consectetur adipisicing elit. 
+        Placeat, a cumque esse velit illum ipsum.
+    </p>
+    <hr>
+    <div class="proof-container">
+        <h3>Transaction Details</h3>
+        <img src="reee.png" alt="image to be insert!!">
+        <div class="list-payment">
+            <p>Send your payment here:</p>
+            <h5>Gcash #: 0912 345 6789</h5>
+            <h5>Paymaya #: 0912 345 6789</h5>
+            <h5>Paypal #: 0912 345 6789</h5>
+            <h5>Coins PH #: 0912 345 6789</h5>
+        </div>
+        <div class="reference">
+            <p>Enter reference number:</p>
+            <input type="text" value="Reference Number...">
+        </div class>
+        <div class="botpay">
+          <input type="button" value="update" class="spass">
+          <input type="button" value="send" class="spass">
+        </div>
+    </div> 
+  </section>
+
+  <!-- Logout -->
+  <section class="myaccount-tabcontent" id="my-logout"></section>
+  <!-- My Service Provided -->
+  <section class="myaccount-tabcontent" id="my-service">
+    <h1><i class="fa-solid fa-screwdriver-wrench"></i> My Services</h1>
+    <hr>
+    <div class="service-container">
+      <h3>Upgrade to a Service Provider account and access exclusive features.</h4>
+      <img src="subs.png" alt="picture to insert!!!!">
+      <p>Hello, Erwin! You cannot access these features if you 
+        are a service seeker. Please subscribe or update your 
+        payment if you want to use these features.</p>
+      <input type="button" value="Upgrade" class="spass">
+    </div>
+  </section>
+  <!-- Delete Account -->
+  <section class="myaccount-tabcontent" id="my-delete-account">
+    <h1>Delete Account</h1>
+    <p>Deleting your account will remove all your information from our database. These cannot be undone.</p>
+    <div class="delete-container">
+      <div class="confirmation">
+        <h3>Confirm account deletion</h3>
+      </div>
+      <div class="letter">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda ex iure 
+          aliquid eius vitae adipisci neque temporibus ad omnis, quibusdam sit, architecto 
+          totam ratione. Atque architecto mollitia accusantium soluta ducimus quidem, ipsum 
+          nemo quibusdam deleniti saepe eaque cupiditate, minus itaque.
+        </p>
+      </div>
+      <div class="conclusion">
+        <p>To confirm deletion, type "Delete"</p>
+        <input type="text" id="deletion" placeholder="Input here..." required>
+      </div>
+      <div class="buttons">
+        <input type="button" value="Confirm" class="spass">
+        <input type="button" value="Cancel" class="cpass">
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="myaccount-tabcontent" id="my-message"><div class="message-container">
+    <div class="chat-container">
+      <h1><i class="fa-solid fa-robot"></i> Automations</h1>
+      <p>Drive growth targeted message that increase
+        sales, tours, to abroad new users and more.</p>
+      <div class="chat-box">
+        <div class="chat">
+          <img src="re.png" alt="">
+          <h4>Instant Chat</h4>
+          <p><i class="fa-sharp fa-solid fa-cannabis"></i> Reply with a greeting when someone message you for the first time Greet people.</p>
+          <button><i class="fa-sharp fa-solid fa-check-to-slot"></i> Apply</button>
+        </div>
+        <div class="chat">
+          <img src="awayr.png" alt="">
+          <h4>Positive Feedback</h4>
+          <p><i class="fa-sharp fa-solid fa-cannabis"></i> Reply to a message that contains positive feedbacks.</p>
+          <button><i class="fa-sharp fa-solid fa-check-to-slot"></i> Apply</button>
+        </div>
+        <div class="chat">
+          <img src="App.png" alt="">
+          <h4>Appointment Reminders</h4>
+          <p><i class="fa-sharp fa-solid fa-cannabis"></i> Send a message remind 24 hours before a schedule appointments.</p>
+          <button><i class="fa-sharp fa-solid fa-check-to-slot"></i> Apply</button>
+        </div>
+        <div class="chat">
+          <img src="loc.png" alt="">
+          <h4>Location</h4>
+          <p><i class="fa-sharp fa-solid fa-cannabis"></i> Reply to a message asking for your location.</p>
+          <button><i class="fa-sharp fa-solid fa-check-to-slot"></i> Apply</button>
+        </div>
+        <div class="chat">
+          <img src="kjj.png" alt="">
+          <h4> Page Recommendation</h4>
+          <p><i class="fa-sharp fa-solid fa-cannabis"></i> Send a message when someone recommended page</p>
+          <button><i class="fa-sharp fa-solid fa-check-to-slot"></i> Apply</button>
+        </div>
+      </div>
+      <div class="chat-bottom">
+        <textarea name="" id="" cols="0" rows="1" placeholder="Message..."></textarea>
+        <button><i class="fa-solid fa-paperclip"></i></button>
+        <button><i class="fa-solid fa-paper-plane"></i></button>
+      </div>
+    </div>
+    <div class="chatlist-container">
+      <h2><i class="fa-sharp fa-solid fa-comments"></i> Conversation</h2>
+      <p><i class="fa-sharp fa-solid fa-circle-dot"></i> Chat list</p>
+      <ul>
+        <li><img src="4.png" alt=""><p>Hermogenes II Pelaez Magsino</p> </li> 
+        <li><img src="4.png" alt=""><p>Erwin B. Andrade</p> </li>
+        <li><img src="4.png" alt=""><p>Eudichael Jardeleza</p> </li>
+        <li><img src="4.png" alt=""><p>Vincent Andrew Monleon</p> </li>
+        <li><img src="4.png" alt=""><p>Princess Nicole Safari</p> </li>
+        <li><img src="4.png" alt=""><p>Patrick Dave Zoleta</p> </li>
+        <li><img src="4.png" alt=""><p>Emerson Lacdao</p> </li>
+        <li><img src="4.png" alt=""><p>Dwyane Stephen </p> </li>
+        <li><img src="4.png" alt=""><p>Kurt Ruzzel Bernardo</p> </li>
+      </ul>
+      <div class="chatlist-bottom">
+        <button><i class="fa-sharp fa-solid fa-paper-plane"></i> Message</button>
+        <button><i class="fa-solid fa-robot"></i> Automation</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <script>
+    function openMyAccount(evt, accountTab) {
+      var i, tabcontent, tablinks;
+
+      tabcontent = document.getElementsByClassName("myaccount-tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      tablinks = document.getElementsByClassName("myaccount-tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      document.getElementById(accountTab).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    document.getElementById("defaultOpen").click();
+  </script>
+
+</body>
+
+</html>
+
+ 
+
+
+
+

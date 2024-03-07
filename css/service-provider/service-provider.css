@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.page_container {
+  padding-top: 80px;
+}
+
+.page_container h1 {
+  margin-left: 80px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  color: #598392;
+}
+
+/* body {
+  margin: 0px;
+  padding-top: 55px;
+  background-color: #f2f1f183;
+
+} */
+
+.service-provider {
+  display: flex;
+  flex-direction: row;
+  /* width: 80%; */
+  height: 70vh;
+  padding: 20px;
+  margin: auto;
+  margin-top: 0px;
+  /* border: 1px solid; */
+  margin-bottom: 5px;
+  background-color: rgba(255, 255, 255, 0.995);
+  /* box-shadow: 1px 10px 10px 1px rgba(165, 163, 163, 0.571); */
+
+}
+
+
+.basic-info {
+  margin: 0 auto 0 auto;
+  padding-top: 25px;
+  height: 60vh;
+}
+
+.basic-info-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: left;
+  /* padding-left: 10px; */
+  padding-right: 10px;
+}
+
+.basic-info-top img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-left: -90px;
+}
+
+.service-provider-btn button {
+  width: 120px;
+  padding: 10px 0;
+  text-align: center;
+  margin: 30px 10px;
+  /* font-weight: bold; */
+  border: none;
+  background-color: #598392;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-provider-btn button:hover {
+
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  transition: .10s;
+}
+
+.service-provider-btn button a {
+  color: white;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.service-provider-btn button a:hover {
+  color: black;
+}
+
+.basic-info-bot {
+  margin: 25px 0 60px 0;
+
+}
+
+.service-provider-btn a {
+  color: blue;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+
+}
+
+.basic-info-bot hr {
+  border: 1px solid rgba(158, 155, 155, 0.6);
+  margin-bottom: 20px;
+}
+
+.basic-info-bot ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.basic-info-bot ul li {
+  position: relative;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.info {
+  display: inline-block;
+  width: 200px;
+}
+
+.basic-info-bot .accomplishment {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+  /* border: 1px solid; */
+}
+
+.basic-info-bot .accomplishment span {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 18px;
+
+}
+
+.basic-info-bot .accomplishment p {
+  color: black;
+  margin-top: 8px;
+  margin-left: 10px;
+
+}
+
+.basic-info-bot .accomplishment p i {
+  margin-right: 15px;
+  justify-content: center;
+  text-align: center;
+}
+
+.basic-info-bot {
+  margin-top: 10px;
+}
+
+.services {
+  height: 200px;
+  width: 400px;
+  padding: 10px;
+  /* border: 1px solid grey; */
+  /* box-shadow: 1px 1px 1px 1px rgba(177, 175, 175, 0.567); */
+  overflow-y: scroll;
+}
+
+.services h3 {
+  color: red;
+  font-family: sans-serif;
+  font-size: 15px;
+  padding-top: 5px;
+}
+
+.services p {
+  font-family: sans-serif;
+  font-size: 15px;
+  border-bottom: 1px solid rgb(199, 199, 199);
+  padding-bottom: 5px;
+}
+
+.description-info {
+  min-width: 300px;
+  height: 100px;
+  padding: 10px;
+  display: inline-block;
+  align-items: flex-start;
+  /* border: 1px solid grey; */
+  /* box-shadow: 1px 1px 1px 1px rgba(177, 175, 175, 0.567); */
+  overflow-y: scroll;
+}
+
+/* Rating and Reviews */
+
+.rating-and-reviews-page {
+  text-align: center;
+}
+
+.rating-and-reviews-page h4 {
+  color: red;
+  padding-bottom: 10px;
+}
+
+.rating-and-reviews-page h2 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 20px;
+}
+
+.rating-and-review-container {
+  max-height: 90vh;
+  overflow-y: scroll;
+  padding-left: 10px;
+}
+
+hr {
+  border-top: 1px solid rgba(188, 185, 185, 0.622);
+}
+
+.hr {
+  border-top: 1px solid rgba(188, 185, 185, 0.622);
+  height: 100vh;
+}
+
+
+/* .rating-and-reviews {
+  border: 2px solid;
+} */
+
+.rating-and-reviews-info {
+  padding: 20px 2px;
+  display: flex;
+}
+
+.rating-and-reviews-info img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.rating-and-reviews-info h4 {
+  color: black;
+}
+
+.name-and-date {
+  text-align: start;
+  margin-left: 30px;
+}
+
+.name-and-date h3 {
+  font-size: 20px;
+}
+
+.name-and-date p {
+  font-size: 15px;
+}
+
+.rating-and-comments {
+  margin: 5px 30px;
+  text-align: start;
+}
+
+.comments {
+  width: 100%;
+  padding-right: 150px;
+  height: 80px;
+  margin: auto;
+
+}
+
+.gallery {
+  display: grid;
+  margin: 20px 30px;
+}
+
+.gallery img {
+  width: 125px;
+  height: 125px;
+}
+
+.rating-and-comments i {
+  color: #598392;
+}
+
+.star {
+  font-size: 2rem;
+  color: #ff9800;
+  background-color: unset;
+  border: none;
+}

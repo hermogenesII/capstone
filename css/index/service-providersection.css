@@ -1,0 +1,132 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+#service-provider-page {
+  text-align: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: rgba(237, 239, 241, 0.79);
+}
+
+.service-provider-title {
+  height: 100px;
+  font-family: sans-serif;
+}
+
+.service-provider-title h1 {
+  margin-left: 5%;
+  font-size: 40px;
+}
+
+.service-provider-title h3 {
+  margin-left: 5%;
+  color: red;
+}
+
+.service-provider-title .categories-dropdown {
+  margin-left: 5%;
+  font-size: 20px;
+}
+
+.service-provider-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 50px;
+  column-gap: 50px;
+  margin: 0 10%;
+}
+
+.service-provider {
+  text-align: center;
+  padding: 40px 80px;
+  color: #fff;
+  position: relative;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-provider .fa-bars {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.service-provider .fa-gear {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 6px;
+  margin-top: 40px;
+}
+
+.profile-bottom {
+  background-color: #fff;
+  color: #999;
+  padding: 30px 0;
+  margin: 0 -80px -60px -80px;
+  border-radius: 20px;
+  margin-top: -10px;
+}
+
+.profile-bottom .fa-arrow-down {
+  width: 100%;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.service-provider .buttons {
+  display: flex;
+  text-align: center;
+}
+
+.service-provider .buttons button:last-child {
+  margin-left: 12px;
+}
+
+.follow-btn {
+  background: #fff;
+  color: #ff574a;
+  border: none;
+  outline: none;
+  box-shadow: 0 5px 10px rgba(244, 67, 54, 0.5);
+  padding: 12px 10px;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-bottom: -12px;
+  font-weight: 600;
+  font-size: 12px;
+  width: 80px;
+}
+
+.social-media i {
+  height: 35px;
+}
+
+.service-provider-more button {
+  width: 150px;
+  padding: 10px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  background: transparent;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-provider-more {
+  text-align: center;
+  margin-top: 20px;
+}

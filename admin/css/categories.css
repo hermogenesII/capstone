@@ -1,0 +1,370 @@
+#categories h1 {
+  color: #598392;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+#categories .paragraph {
+  margin-bottom: 10px;
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 15px;
+  min-width: 1165px;
+}
+
+.content-table thead tr {
+  background-color: #598392;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid rgb(197, 195, 195);
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody button {
+  color: rgb(78, 128, 172);
+  margin-left: 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: transparent;
+}
+
+.content-table tbody button:hover {
+  color: red;
+}
+
+.content-table thead tr th i {
+  color: white;
+  display: inline-table;
+}
+
+.content-table th p {
+  color: white;
+  margin-left: 15px;
+}
+
+#categories button {
+  color: white;
+  width: 23%;
+  height: 25px;
+  /* font-size: 15px; */
+  padding: auto;
+  cursor: pointer;
+  border: solid 1px;
+  /* border-radius: 8px; */
+  /* box-shadow: 1px 5px 5px 1px rgb(210, 207, 207); */
+  border: none;
+  transition: 0.3s;
+  background-color: #598392;
+}
+
+#categories button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid;
+}
+
+/* .proof-container {
+  margin-top: 20px;
+  box-shadow: 1px 10px 10px 1px rgb(221, 216, 216);
+  background-color: white;
+} */
+
+
+.proof-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 0;
+  row-gap: 40px;
+  margin: 5%;
+  border-radius: 20px;
+}
+
+.category {
+  border-radius: 20px;
+  margin: 30px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.category img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  height: 250px;
+  z-index: 99;
+}
+
+.category-border {
+  width: 100%;
+  height: 100%;
+}
+
+.category-description {
+  text-align: justify;
+  margin: 30px;
+  text-decoration: none;
+}
+
+.category-description h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.layer:hover {
+  background: #83b5d190;
+}
+
+.layer h3 {
+  width: 90%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 13px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer .label-viewBtn,
+.layer #viewSub {
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 13px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.layer .viewSub {
+  display: none;
+}
+
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+ol {
+  padding: 20px 10px;
+  margin: auto;
+  width: 80%;
+  list-style: decimal;
+  list-style-type: decimal;
+  margin-bottom: 100px;
+}
+
+ol li {
+  list-style-type: decimal;
+  text-align: left;
+  line-height: 25px;
+}
+
+ol li label {
+  display: inline;
+  position: relative;
+  right: 0;
+}
+
+ol li p {
+  width: 255px;
+  display: inline-block;
+}
+
+#addBtn,
+#editBtn,
+#deleteBtn,
+.addSub {
+  display: none;
+}
+
+.but .addBtn:checked+.accept-container {
+  visibility: visible;
+}
+
+.accept-container,
+.addSub-container,
+.viewSub-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border: solid;
+  visibility: hidden;
+  z-index: 999;
+}
+
+.accept-prompt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: auto;
+  background-color: white;
+  padding: 0px 0 20px 0px;
+  text-align: center;
+  color: black;
+  border: none;
+  box-shadow: 1px 10px 10px 1px rgb(172, 171, 171);
+  height: 300px;
+  z-index: 999;
+}
+
+.accept-prompt .addContainer {
+  /* border: solid; */
+  width: 500px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.but .accept-container .addContainer {
+  background-color: white;
+  height: auto;
+  display: inline-block;
+  justify-content: center;
+  padding: 10px;
+}
+
+.but .accept-container {
+  margin-top: -80px;
+  border: none;
+}
+
+.but .accept-container .accept-prompt .addContainer textarea {
+  border: none;
+  background-color: white;
+  font-family: sans-serif;
+  font-size: 14px;
+  /* margin-left: 20px; */
+  /* margin-bottom: 20px; */
+
+}
+
+.accept-prompt .addContainer>label {
+  display: block;
+  width: 21%;
+  margin: auto;
+  color: white;
+  border: 1px solid;
+  padding: 5px;
+  margin-bottom: 7px;
+  margin-top: 10px;
+}
+
+.accept-prompt .addContainer>label:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid;
+}
+
+.accept-prompt .addContainer>i {
+  /* display: inline-block; */
+  border: 1px solid;
+  padding: 50px;
+  margin-top: 10px;
+}
+
+.accept-prompt .addContainer img {
+  width: 125px;
+  height: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.but .accept-prompt .addContainer input {
+  margin: auto;
+  display: block;
+}
+
+.but .accept-container .accept-prompt h2 {
+  padding: 25px 0px 25px 0px;
+}
+
+.accept-prompt .addContainer #categoryName {
+  border: 1px solid;
+  height: 21px;
+  margin-top: 12px;
+  margin-top: 5px;
+  padding-left: 5px;
+}
+
+.accept-prompt .addContainer #categoryDescription {
+  height: 50px;
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid;
+}
+
+.accept-prompt .addContainer input[type="file"] {
+  display: none;
+}
+
+.accept-prompt h2 {
+  color: black;
+  font-size: 18px;
+  border-bottom: 2px solid rgb(208, 204, 204);
+  padding: 10px 0px 10px 0px;
+}
+
+.acceptBtn {
+  display: none;
+}
+
+label {
+  color: white;
+  padding: 6.5px;
+  border: 1px solid rgb(157, 157, 157);
+  font-size: 13px;
+  background-color: #598392;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+label:hover {
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+i {
+  padding-right: 5px;
+}

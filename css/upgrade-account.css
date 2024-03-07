@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+
+}
+
+body {
+  background-size: cover;
+}
+
+.upgrade-account-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+
+}
+
+.upgrade-account {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.8;
+  box-shadow: 8px 10px rgb(199, 199, 199);
+
+}
+
+.upgrade-account h1 {
+  padding: 20px;
+  border-bottom: 3px solid rgba(103, 100, 100, 0.722);
+  border-radius: 15px 15px 0px 0px;
+}
+
+.upgrade-account form {
+  padding: 10px 90px;
+}
+
+.upgrade-account form select {
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.upgrade-account form #category {
+  float: left;
+  margin-right: 30px;
+}
+
+.upgrade-account form #specific-service {
+  float: right;
+}
+
+.upgrade-account textarea {
+  display: block;
+  width: 98%;
+  height: 20vh;
+  resize: none;
+  padding: 1%;
+  margin-bottom: 20px;
+}
+
+.upgrade-account input {
+  width: 150px;
+  padding: 10px 0;
+  text-align: center;
+  margin: 0 25px 50px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 1px solid #1267df;
+  background: transparent;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.upgrade-account input:hover {
+  background-color: rgba(17, 138, 219, 0.597);
+  cursor: pointer;
+
+}

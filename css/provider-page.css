@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 
+body {
+  background-image: linear-gradient(to right, rgb(34, 99, 149), rgb(7, 189, 202));
+} */
+
+#service-provider-page {
+  text-align: left;
+  padding-top: 75px;
+  padding-bottom: 50px;
+  background-color: white;
+}
+
+.service-provider-title {
+  height: 100px;
+}
+
+.service-provider-title h1 {
+  margin-left: 5%;
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+.service-provider-title p {
+  margin-left: 5%;
+  font-size: 20px;
+}
+
+.service-provider-title select {
+  margin-left: 5%;
+  margin-top: 10px;
+  font-size: 15px;
+  padding: 5px;
+  width: 180px;
+}
+
+.service-provider-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 40px;
+  column-gap: 40px;
+  margin: 50px;
+}
+
+.service-provider {
+  text-align: center;
+  padding: 40px 60px;
+  color: white;
+  font-size: 18px;
+  position: relative;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-provider .fa-bars {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.service-provider .fa-gear {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 6px;
+  margin-top: 40px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.profile-bottom {
+  background-color: #fff;
+  color: #999;
+  padding: 30px 0;
+  margin: 0 -60px -40px -60px;
+  border-radius: 20px;
+  margin-top: -10px;
+}
+
+.profile-bottom>a {
+  text-decoration: none;
+  color: rgb(23, 108, 139);
+  font-weight: 500;
+}
+
+.profile-bottom .fa-arrow-down {
+  width: 100%;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.service-provider .buttons button:last-child {
+  margin-left: 12px;
+}
+
+.service-provider>p {
+  height: 50px;
+}
+
+.follow-btn {
+  background: #fff;
+  text-decoration: none;
+  border: none;
+  color: #cb3737;
+  outline: none;
+  box-shadow: 0 5px 10px rgba(244, 67, 54, 0.5);
+  padding: 10px 12px;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-bottom: -12px;
+  font-weight: 600;
+  font-size: 16px;
+  width: 80px;
+  text-align: center;
+  transition: 0.3s;
+  font-family: sans-serif;
+}
+
+.follow-btn:hover {
+  background-color: #4c7992;
+  color: #fff;
+}
+
+.social-media i {
+  height: 35px;
+}
+
+.service-provider-more button {
+  width: 150px;
+  padding: 10px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  background: transparent;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-provider-more {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1240px) {
+
+  .service-provider {
+    text-align: center;
+    padding: 50px 40px;
+    color: #fff;
+    position: relative;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .buttons {
+    top: 10px;
+  }
+
+  .profile-bottom {
+    background-color: #fff;
+    color: #999;
+    padding: 20px;
+    margin: 0 -40px -50px -40px;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+
+}
+
+
+@media (max-width: 1024px) {
+
+  .service-provider-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 25px;
+    row-gap: 25px;
+    column-gap: 25px;
+  }
+
+  .service-provider-title h1 {
+    font-size: 40px;
+  }
+
+  .service-provider {
+    padding: 15px;
+  }
+
+  .service-provider h4 {
+    font-size: 15px;
+  }
+
+  .profile-bottom {
+    background-color: #fff;
+    color: #999;
+    padding: 20px;
+    margin: 0 -15px -15px -15px;
+    border-radius: 20px;
+    margin-top: 5px;
+  }
+
+  .service-provider .fa-bars {
+    top: 30px;
+    left: 30px;
+  }
+
+  .service-provider .fa-gear {
+    top: 30px;
+    right: 30px;
+  }
+
+  .service-provider>p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 794px) {
+
+  .service-provider-container {
+    grid-template-columns: 1fr 1fr;
+    margin: 35px;
+    row-gap: 35px;
+    column-gap: 35px;
+  }
+
+  .service-provider-title h1 {
+    font-size: 40px;
+  }
+
+  .service-provider {
+    padding: 15px 15px 5px 15px;
+    border-radius: 15px;
+  }
+
+  .service-provider h4 {
+    font-size: 15px;
+  }
+
+  .profile-pic {
+    width: 60px;
+    height: 60px;
+  }
+
+  .follow-btn {
+    font-size: 12px;
+    width: 75px;
+    border-radius: 16px;
+  }
+
+  .service-provider .buttons button:last-child {
+    margin-left: 6px;
+  }
+
+  .profile-bottom {
+    background-color: #fff;
+    color: #999;
+    padding: 20px;
+    margin: 0 -15px -5px -15px;
+    border-radius: 15px;
+    margin-top: 5px;
+  }
+
+  .service-provider .fa-bars {
+    top: 30px;
+    left: 30px;
+  }
+
+  .service-provider .fa-gear {
+    top: 30px;
+    right: 30px;
+  }
+
+  .service-provider>p {
+    font-size: 13px;
+  }
+
+  .profile-bottom>p {
+    font-size: 14px;
+  }
+
+  .profile-bottom .fa-arrow-down {
+    margin-top: 0;
+  }
+
+  .buttons {
+    top: 5px;
+  }
+
+}
+
+@media (max-width: 687px) {
+
+  .service-provider-container {
+    margin: 20px;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+}

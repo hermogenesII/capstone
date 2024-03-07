@@ -1,0 +1,51 @@
+body {
+  /* background-image: linear-gradient(to right, rgb(36, 115, 157), rgb(226, 146, 81)); */
+  background-color: aliceblue;
+  font-family: "Poppins", sans-serif;
+}
+
+.alert-container {
+  /* border: 1px solid rgb(173, 173, 173); */
+  width: 50%;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.alert-container img {
+  width: 300px;
+  height: 300px;
+}
+
+.alert-container .alert button {
+  margin-bottom: 20px;
+  cursor: pointer;
+  width: 80px;
+  border: none;
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+  padding: 5px;
+  border: 1px solid rgba(198, 191, 191, 0.708);
+}
+
+.alert-container .alert button:hover {
+  background-color: rgb(75, 121, 132);
+  color: white;
+
+}
+
+.alert-container .alert button a {
+  text-decoration: none;
+  color: black;
+}
+
+.alert-container .alert button a:hover {
+  color: white;
+}
+
+.alert-container .alert p {
+  font-size: 16px;
+  padding: 0px 50px 0px 50px;
+}

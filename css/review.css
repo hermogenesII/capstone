@@ -1,0 +1,89 @@
+body {
+  padding-top: 50px;
+  width: 80%;
+  margin: auto;
+  background-color: rgb(243, 241, 241);
+  font-family: "Poppins", sans-serif;
+}
+
+#review {
+  text-align: center;
+  border: none;
+}
+
+.header h1 {
+  font-size: 30px;
+  border: none;
+
+}
+
+#review .review-container {
+  width: 500px;
+  max-width: 80%;
+  padding: 50px 50px;
+  border: 2px solid;
+  border-radius: 20px;
+  margin: 10px auto 75px auto;
+  border: none;
+  background-color: white;
+  box-shadow: 1px 5px 5px 1px rgb(202, 197, 197);
+}
+
+.review-container .profile img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+#review .review-container .star-review input {
+  display: none;
+}
+
+.star {
+  font-size: 3rem;
+  color: rgb(31, 98, 95);
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+}
+
+#review .review-container .description textarea {
+  width: 250px;
+  height: 50px;
+  padding: 8px;
+  font-family: sans-serif;
+}
+
+#review .review-container .description {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#review .review-container .description input {
+  background-color: transparent;
+}
+
+#review .review-container .buttons input {
+  background-color: rgb(31, 98, 95);
+  color: white;
+  margin-top: 20px;
+  height: 30px;
+  width: 80px;
+  border: none;
+  cursor: pointer;
+  border-radius: 1px 2px 2px 1px rgb(197, 195, 195);
+  transition: 0.3s;
+}
+
+#review .review-container .buttons input:hover {
+  background-color: rgb(54, 140, 135);
+}
+
+#review .review-container .buttons {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+}

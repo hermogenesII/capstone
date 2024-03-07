@@ -1,0 +1,58 @@
+body {
+  background-image: linear-gradient(to right, rgb(25, 84, 131), rgb(46, 176, 211));
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  /* margin: 20%; */
+  padding: 0px 30px 30px 30px;
+}
+
+h1 {
+  color: white;
+  margin-left: 100px;
+}
+
+iframe {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+#my-map-display {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.map {
+  text-decoration: none;
+  overflow: hidden;
+  width: 90%;
+  height: 580px;
+  margin-left: 70px;
+  box-shadow: 1px 5px 5px 1px rgb(144, 144, 144);
+}
+
+p {
+  font-family: sans-serif;
+  color: white;
+  margin-left: 100px;
+  margin-top: -20px;
+}
+
+button {
+  height: 20px;
+  width: 60px;
+  position: absolute;
+  margin-left: 1355px;
+  margin-top: -35px;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: rgb(56, 121, 139);
+  color: white;
+}

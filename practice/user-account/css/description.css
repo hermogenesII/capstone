@@ -1,0 +1,73 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.app-container {
+  margin-top: 30px;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  gap: 20px;
+  box-shadow: 1px 10px 10px 1px rgba(164, 182, 188, 0.978);
+  width: 500px;
+  height: 520px;
+  margin-left: 300px;
+  background-color: white;
+}
+
+#my-description h1 {
+  color: #598392;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+#my-description p {
+  margin-bottom: 10px;
+  color: black;
+}
+
+.app-container i {
+  color: rgb(64, 147, 242);
+}
+
+.app-container h2 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.description-box {
+  height: 50px;
+  width: 300px;
+  font-size: 15px;
+  font-family: sans-serif;
+  padding: 5px;
+  margin-top: -50px;
+  border: 1px 1px 1px 1px;
+  resize: none;
+}
+
+.app-container img {
+  width: 380px;
+  height: 350px;
+}
+
+.app-container .app-dropdown {
+  margin-top: -110px;
+}
+
+.app-container input {
+  height: 30px;
+  width: 70px;
+  background-color: #598392;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.app-container input:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}

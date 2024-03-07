@@ -1,0 +1,439 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.chat-container h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #598392;
+}
+
+#my-message .message-container {
+  display: flex;
+  flex-direction: row;
+
+}
+
+#my-message .chat-container {
+  flex-basis: 70%;
+  margin-right: 30px;
+}
+
+#my-message .chat-container h2 {
+  display: block;
+  box-sizing: border-box;
+  border-top: none;
+  border-bottom: solid 1px;
+  border-left: none;
+  border-right: none;
+}
+
+#my-message .chat-container>p {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: none;
+  border-bottom: solid 1px;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 10px;
+}
+
+#my-message .chat-container .chat-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 10 0%;
+  height: 70vh;
+  overflow-y: auto;
+}
+
+#my-message .chat-container .chat-box .chat {
+  padding-top: 30px;
+  width: 80%;
+  text-align: center;
+}
+
+#my-message .chat-container .chat-box .chat img {
+  width: 200px;
+  height: 150px;
+  border: none;
+  margin-left: 60px;
+}
+
+#my-message .chat-container .chat-box .chat p {
+  width: 80%;
+  margin: auto;
+  text-align: start;
+  padding-top: 15px;
+  margin-left: 60px;
+  margin-bottom: 10px;
+  text-align: justify;
+  height: 70px;
+}
+
+#my-message .chat-container .chat-box h4 {
+  margin-left: 60px;
+  color: #598392;
+}
+
+#my-message .chat-container .chat-box .chat button {
+  padding: 5px 15px;
+  background-color: #ffffff;
+  width: 120px;
+  height: 35px;
+  border: 1px;
+  margin-left: 54px;
+  transition: 0.5s;
+  color: black;
+  box-shadow: 1px 1px 1px 1px #598392;
+}
+
+#my-message .chat-container .chat-box .chat button:hover {
+  background-color: #598392b3;
+}
+
+#my-message .chat-container .chat-bottom {
+  display: flex;
+  position: relative;
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  bottom: 0;
+  align-items: center;
+  box-sizing: border-box;
+  border-top: solid 1px;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  color: #598392;
+}
+
+#my-message .chat-container .chat-bottom textarea {
+  padding: 10px;
+  width: 100%;
+  border-radius: 20px;
+  resize: none;
+
+}
+
+#my-message .chat-container .chat-bottom button {
+  color: #598392;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#my-message .chat-container .chat-bottom button:hover {
+  background-color: #5983927c;
+}
+
+#my-message .chatlist-container {
+  flex-basis: 30%;
+  height: 90vh;
+  box-sizing: border-box;
+  border-top: none;
+  border-bottom: none;
+  border-left: solid 1px;
+  border-right: none;
+}
+
+#my-message .chatlist-container h2 {
+  display: block;
+  box-sizing: border-box;
+  border-top: 0;
+  border-bottom: solid 1px;
+  border-left: none;
+  border-right: none;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #598392;
+}
+
+#my-message .chatlist-container>p {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-left: 10px;
+}
+
+#my-message .chatlist-container ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  height: 70vh;
+
+}
+
+#my-message .chatlist-container ul li {
+  list-style: none;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#my-message .chatlist-container ul li p {
+  list-style: none;
+  padding-left: 10 px;
+  width: 90%;
+  margin: 10px;
+  font-size: 15px;
+  display: inline;
+}
+
+#my-message .chatlist-container ul li img {
+  width: 45px;
+  border: solid 1px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+#my-message .chatlist-container .chatlist-bottom {
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  bottom: 0;
+  align-items: center;
+  box-sizing: border-box;
+  border-top: solid 1px;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  margin-left: 10px;
+  color: #598392;
+}
+
+#my-message .chatlist-container .chatlist-bottom button {
+  padding: 10px;
+  width: 125px;
+  margin-left: 15px;
+  box-shadow: 1px 1px 1px 1px #598392;
+  border: none;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+#my-message .chatlist-container .chatlist-bottom button:hover {
+  background-color: #5983928e;
+}
+
+#my-automation .message-container {
+  display: flex;
+  flex-direction: row;
+
+}
+
+#my-automation .chat-container {
+  flex-basis: 70%;
+  margin-right: 30px;
+}
+
+#my-automation .chat-container h2 {
+  display: block;
+  box-sizing: border-box;
+  border-top: none;
+  border-bottom: solid 1px;
+  border-left: none;
+  border-right: none;
+}
+
+#my-automation .chat-container>p {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: none;
+  border-bottom: solid 1px;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 10px;
+}
+
+#my-automation .chat-container .chat-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 10 0%;
+  height: 70vh;
+  overflow-y: auto;
+}
+
+#my-automation .chat-container .chat-box .chat {
+  padding-top: 30px;
+  width: 80%;
+  text-align: center;
+}
+
+#my-automation .chat-container .chat-box .chat img {
+  width: 200px;
+  height: 150px;
+  border: none;
+  margin-left: 60px;
+}
+
+#my-automation .chat-container .chat-box .chat p {
+  width: 80%;
+  margin: auto;
+  text-align: start;
+  padding-top: 15px;
+  margin-left: 60px;
+  margin-bottom: 10px;
+  text-align: justify;
+  height: 70px;
+}
+
+#my-automation .chat-container .chat-box h4 {
+  margin-left: 60px;
+  color: #598392;
+}
+
+#my-automation .chat-container .chat-box .chat button {
+  padding: 5px 15px;
+  background-color: #ffffff;
+  width: 120px;
+  height: 35px;
+  border: 1px;
+  margin-left: 54px;
+  transition: 0.5s;
+  color: black;
+  box-shadow: 1px 1px 1px 1px #598392;
+}
+
+#my-automation .chat-container .chat-box .chat button:hover {
+  background-color: #598392b3;
+}
+
+#my-automation .chat-container .chat-bottom {
+  display: flex;
+  position: relative;
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  bottom: 0;
+  align-items: center;
+  box-sizing: border-box;
+  border-top: solid 1px;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  color: #598392;
+}
+
+#my-automation .chat-container .chat-bottom textarea {
+  padding: 10px;
+  width: 100%;
+  border-radius: 20px;
+  resize: none;
+
+}
+
+#my-automation .chat-container .chat-bottom button {
+  color: #598392;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#my-automation .chat-container .chat-bottom button:hover {
+  background-color: #5983927c;
+}
+
+#my-automation .chatlist-container {
+  flex-basis: 30%;
+  height: 90vh;
+  box-sizing: border-box;
+  border-top: none;
+  border-bottom: none;
+  border-left: solid 1px;
+  border-right: none;
+}
+
+#my-automation .chatlist-container h2 {
+  display: block;
+  box-sizing: border-box;
+  border-top: 0;
+  border-bottom: solid 1px;
+  border-left: none;
+  border-right: none;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #598392;
+}
+
+#my-automation .chatlist-container>p {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-left: 10px;
+}
+
+#my-automation .chatlist-container ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  height: 70vh;
+
+}
+
+#my-automation .chatlist-container ul li {
+  list-style: none;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#my-automation .chatlist-container ul li p {
+  list-style: none;
+  padding-left: 10 px;
+  width: 90%;
+  margin: 10px;
+  font-size: 15px;
+  display: inline;
+}
+
+#my-automation .chatlist-container ul li img {
+  width: 45px;
+  border: solid 1px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+#my-automation .chatlist-container .chatlist-bottom {
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  bottom: 0;
+  align-items: center;
+  box-sizing: border-box;
+  border-top: solid 1px;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  margin-left: 10px;
+  color: #598392;
+}
+
+#my-automation .chatlist-container .chatlist-bottom button {
+  padding: 10px;
+  width: 125px;
+  margin-left: 15px;
+  box-shadow: 1px 1px 1px 1px #598392;
+  border: none;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+#my-automation .chatlist-container .chatlist-bottom button:hover {
+  background-color: #5983928e;
+}

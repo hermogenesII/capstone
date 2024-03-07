@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.page_container {
+  padding: 75px;
+}
+
+body h1 {
+  text-align: center;
+  /* margin-top: 100px; */
+  margin-bottom: 30px;
+}
+
+.review-summary {
+  width: 80%;
+  height: 40vh;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.basic-info {
+  display: inline-block;
+  width: 58%;
+  height: 100%;
+  border: 2px solid;
+  vertical-align: top;
+}
+
+.basic-info img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  padding: 25px;
+  margin-left: 25px;
+}
+
+.categories-btn {
+  display: flex;
+  float: right;
+  margin: 45px 5px 0 0;
+}
+
+.categories-btn button {
+  width: 100px;
+  padding: 10px 0;
+  text-align: center;
+  margin: 0 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  background: transparent;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.basic-info-details {
+  margin: 0 60px;
+}
+
+.basic-info-details ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.basic-info-bot details li {
+  position: relative;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.info {
+  display: inline-block;
+  width: 200px;
+}
+
+.reviews {
+  display: inline-block;
+  width: 38%;
+  height: 100%;
+}
+
+.reviews h3 {
+  padding: 40px 30px;
+}

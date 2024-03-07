@@ -1,0 +1,116 @@
+#proof h1 {
+  color: #598392;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+#proof .paragraph {
+  margin-bottom: 10px;
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 15px;
+  min-width: 1212px;
+}
+
+.content-table thead tr {
+  background-color: #598392;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid rgb(197, 195, 195);
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr td select option {
+  color: black;
+  border-radius: 0;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.content-table tbody .accept {
+  color: rgb(34, 73, 107);
+  margin-left: 25px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  background-color: transparent;
+}
+
+.content-table tbody .accept:hover {
+  color: rgb(21, 217, 103);
+}
+
+/* .content-table tbody button {
+  color: rgb(34, 73, 107);
+  margin-left: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: transparent;
+} */
+
+
+.content-table thead tr th i {
+  color: white;
+  display: inline-table;
+}
+
+.content-table th p {
+  color: white;
+  margin-left: 15px;
+}
+
+.proof-container {
+  margin-top: 20px;
+  box-shadow: 1px 10px 10px 1px rgb(221, 216, 216);
+  background-color: white;
+}
+
+#image {
+  cursor: pointer;
+  width: 70px;
+  height: 35px;
+}
+
+#image:hover {
+  position: absolute;
+  width: 350px;
+  height: auto;
+}
+
+.update-btn {
+  /* margin-top: 10px; */
+  width: 100px;
+  height: 30px;
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 10px;
+  background: #598392;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.3s;
+  border: none;
+}
+
+.update-btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid rgb(206, 206, 206);
+}

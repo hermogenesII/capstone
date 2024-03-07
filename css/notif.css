@@ -1,0 +1,116 @@
+body {
+  background-color: rgb(241, 239, 239);
+  font-family: "Poppins", sans-serif;
+}
+
+.notification {
+  padding-top: 80px;
+  display: grid;
+  place-content: center;
+}
+
+.notif-content {
+  border: none;
+  width: 500px;
+  display: block;
+  align-content: center;
+  height: 60px;
+  box-shadow: 1px 2px 2px 1px grey;
+  background-image: linear-gradient(rgb(89, 131, 146), #4b9090);
+
+}
+
+.notif-content h2 {
+  text-align: center;
+  margin-top: 15px;
+  color: white;
+}
+
+.notification-content {
+  border: none;
+  width: 500px;
+  height: auto;
+  margin-top: 2px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: white;
+  box-shadow: 1px 10px 10px 1px grey;
+}
+
+.notification-content ul {
+  list-style-type: none;
+  height: 450px;
+  overflow-y: scroll;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+
+.notification-content ul li {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  border-bottom: 1px solid rgb(217, 211, 211);
+  padding-bottom: 5px;
+}
+
+.notification-content ul li:hover {
+  background-color: rgb(229, 225, 225);
+  margin-right: 10px;
+  margin-left: -10px;
+
+
+}
+
+.notification-content ul li p {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.notification-content ul li img {
+  border: 1px solid;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.notification-content ul li h2 {
+  margin-left: -15px;
+  margin-top: 25px;
+  font-size: 18px;
+}
+
+.notification-content ul li .hire {
+  color: rgb(9, 9, 133);
+}
+
+.notification-content ul li .sent {
+  color: rgb(5, 159, 5);
+}
+
+.notification-content ul li .cancel {
+  color: red;
+}
+
+.notification-content ul li .rate {
+  color: rgb(233, 233, 13);
+}
+
+.notification-content ul li .comment {
+  color: #4b9090;
+}
+
+.notification-content ul li .accept {
+  color: rgb(27, 127, 214);
+}
+
+.notification-content ul li .update {
+  color: black;
+}

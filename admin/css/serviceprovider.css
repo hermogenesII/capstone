@@ -1,0 +1,95 @@
+#service-provider h1 {
+  color: #598392;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 15px;
+  min-width: 1165px;
+}
+
+.content-table thead tr {
+  background-color: #598392;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid rgb(197, 195, 195);
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody .accept {
+  color: rgb(34, 73, 107);
+  margin-left: 35px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  background-color: transparent;
+}
+
+.content-table tbody .accept:hover {
+  color: rgb(20, 200, 47);
+  height: 30px;
+}
+
+.content-table tbody button {
+  color: rgb(34, 73, 107);
+  margin-left: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: transparent;
+}
+
+.content-table tbody button:hover {
+  color: red;
+  height: 30px;
+}
+
+.content-table thead tr th i {
+  color: white;
+  display: inline-table;
+}
+
+.content-table th p {
+  color: white;
+  margin-left: 15px;
+}
+
+#categories .but button {
+  color: black;
+  width: 80px;
+  height: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 1px 5px 5px 1px rgb(210, 207, 207);
+  border: none;
+  transition: 0.3s;
+  background-color: white;
+}
+
+#categories .but button:hover {
+  background-color: #598392;
+  color: white;
+}
+
+.proof-container {
+  margin-top: 20px;
+  box-shadow: 1px 10px 10px 1px rgb(221, 216, 216);
+  background-color: white;
+}

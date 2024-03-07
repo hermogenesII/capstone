@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="hire.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="image">
+        <img src="hire.png" alt="image">
+        <h1>Everyday life made easier</h1>
+        <h4>When life gets busy, you don’t have to tackle it alone. <br>Get 
+            time back for what you love without breaking the bank.</h4>
+        <p><i class="fa-solid fa-check"></i> Choose your Tasker by reviews, skills, and price</p>
+        <p><i class="fa-solid fa-check"></i> Schedule when it works for you — as early as today</p>
+        <p><i class="fa-solid fa-check"></i> Chat, pay, tip, and review all through one platform</p>
+    </div>
+    <div class="head">
+        <h1><i class="fa-brands fa-hire-a-helper"></i>ire Me!</h1>
+    </div>
+    <form action="" id="hire-form" method="post" required>
+        <section class="hire-form">
+            <div class="form-container">
+                <div class="top-form-id">
+                    <p><i class="fa-solid fa-user"></i> Name: </p>
+                    <p><i class="fa-solid fa-location-dot"></i> Location: </p>
+                    <p><i class="fa-solid fa-address-book"></i> Contact Number: </p>
+                    <p><i class="fa-solid fa-toolbox"></i> Service Request: </p>
+                    <p><i class="fa-solid fa-screwdriver-wrench"></i> Mode of Service: </p>
+                </div>
+                <div class="top-form">
+                    <input type="text" name="firstname" required>
+                    <input type="text" name="lasttname" required>
+                    <input type="number" name="firstname" required>
+                    <input type="text" name="service" required>
+                    <select name="mos" id="mos"><!-- mos(Mode of Service) -->
+                        <option value="select">Select</option>
+                        <option value="home-service">Home Service</option>
+                        <option value="walk-in">Walk In</option>
+                    </select> 
+                </div>
+            </div>
+            <div class="low-form">
+                <div class="other">
+                    <p>Other Description/Issue: </p>
+                </div>
+                <div class="description">
+                    <textarea id="text" name="description"></textarea>
+                </div>
+            <div class="buttons">
+                <div class="pula">
+                <input type="submit" value="Submit" class="sbmt-btn">
+                </div>
+                <input type="submit" value="Cancel" class="sbmt-btn">
+            </div>
+            </div>
+            
+        </section>
+    </form>
+</body>
+</html>

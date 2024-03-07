@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hire.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="head">
+        <h1>Hire me</h1>
+    </div>
+    <form action="" id="hire-form" method="post" required>
+        <section class="hire-form">
+            <div class="form-container">
+                <div class="top-form-id">
+                    <p>Name: </p>
+                    <p>Location: </p>
+                    <p>Contact Number: </p>
+                    <p>Service Request: </p>
+                    <p>Mode of Service: </p>
+                </div>
+                <div class="top-form">
+                    <input type="text" name="firstname" required>
+                    <input type="text" name="lasttname" required>
+                    <input type="number" name="firstname" required>
+                    <input type="text" name="service" required>
+                    <select name="mos" id="mos"><!-- mos(Mode of Service) -->
+                        <option value="select">Select</option>
+                        <option value="home-service">Home Service</option>
+                        <option value="walk-in">Walk In</option>
+                    </select> 
+                </div>
+            </div>
+            <div class="low-form">
+                <div class="other">
+                    <p>Other Description/Issue: </p>
+                </div>
+                <div class="description">
+                    <textarea id="text" name="description"></textarea>
+                </div>
+            <div class="buttons">
+                <input type="submit" value="Submit" class="sbmt-btn">
+                <input type="submit" value="Cancel" class="sbmt-btn">
+            </div>
+            </div>
+            
+        </section>
+    </form>
+</body>
+</html>

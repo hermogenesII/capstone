@@ -1,0 +1,302 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/*subscripiton*/
+
+.subscription-page {
+  display: none;
+}
+
+#my-subscription h1 {
+  color: #598392;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+
+#my-subscription p {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.subs-container {
+  display: grid;
+  place-self: center;
+  box-shadow: 1px 10px 10px 1px rgb(239, 236, 236);
+}
+
+.payment-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+  margin-top: -30px;
+}
+
+.payment-list .number h5 {
+  text-align: left;
+}
+
+.subs-list {
+  margin-top: 50px;
+  box-shadow: 1px 10px 10px 1px gray;
+  height: 450px;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background-color: white;
+}
+
+.subs-list h2 {
+  color: blue;
+}
+
+.subs-list img {
+  width: 200px;
+  height: 200px;
+}
+
+.subs-list p {
+  text-align: center;
+}
+
+.subs-list .pay p {
+  color: black;
+  font-weight: bold;
+}
+
+.subs-list .amount p {
+  color: blue;
+  font-weight: bold;
+}
+
+
+
+
+@media (max-width: 850px) {
+  .payment-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 570px) {
+  .payment-list {
+    grid-template-columns: 1fr;
+    padding-bottom: 100px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Next page!!!!! */
+
+.subscription-page {
+  margin: 0px 20px;
+}
+
+.proof-container-form {
+  display: grid;
+  /* box-shadow: 0px 2px 2px 1px rgb(155, 153, 153); */
+  width: 1115;
+  height: fit-content;
+  border: rgb(7, 7, 7);
+  margin-top: -10px;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+}
+
+.trylang {
+  width: fit-content;
+  display: grid;
+  place-self: center;
+  box-shadow: 0px 2px 2px 1px #ffffffe9;
+  padding: 20px 100px;
+  background-color: white;
+}
+
+.proof-container-form img {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  width: 400px;
+  height: auto;
+}
+
+.list-payment {
+  display: grid;
+  place-items: center;
+}
+
+.proof-container-form .trylang .list-payment .reference p {
+  color: red;
+}
+
+.list-payment img {
+  width: 200px;
+  height: 200px;
+}
+
+.list-payment h5 {
+  text-align: justify;
+}
+
+.reference {
+  display: grid;
+  place-content: center;
+}
+
+/* #my-subscription .proof-container-form {
+  display: block;
+  gap: 20px;
+  padding: 20px;
+  place-items: center;
+  box-shadow: 1px 10px 10px 1px #a9c7d2;
+  margin-top: 40px;
+  height: 500px;
+  background-color: white;
+  border-radius: 20px;
+
+} */
+
+/* #my-subscription .proof-container-form h3 {
+  margin-left: 750px;
+  margin-bottom: 10px;
+} */
+
+#my-subscription .proof-container-form i {
+  color: rgb(27, 134, 235);
+}
+
+
+
+.list-payment {
+  padding: 5px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.list-payment p {
+  color: black;
+  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.list-payment i {
+  margin-right: 10px;
+  color: rgb(41, 138, 249);
+}
+
+.reference>input {
+  padding: 5px;
+}
+
+/* .reference {
+  margin-top: 20px;
+  margin-left: 95px;
+} */
+
+/* .reference p {
+  margin-left: 15px;
+} */
+
+.botpay {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.back {
+  /* margin-top: 10px; */
+  width: 100px;
+  padding: 10px 0;
+  font-weight: bold;
+  font-size: 10px;
+  background: #598392;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.3s;
+  border: none;
+}
+
+.back:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid rgb(206, 206, 206);
+}
+
+.subscription-page .app-container {
+  margin-top: 30px;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  gap: 20px;
+  box-shadow: 1px 10px 10px 1px rgba(164, 182, 188, 0.978);
+  width: 500px;
+  height: 450px;
+  margin-left: 250px;
+  background-color: white;
+
+
+}
+
+.app-container i {
+  color: rgb(64, 147, 242);
+}
+
+.app-container h2 {
+  /* margin-top: -20px; */
+  font-size: 18px;
+}
+
+.description-box {
+  height: 50px;
+  width: 250px;
+  padding: 5px;
+  /* margin-top: -50px; */
+  border: 1px 1px 1px 1px;
+}
+
+.app-container img {
+  width: 380px;
+  height: 350px;
+  /* margin-top: -50px; */
+}
+
+/* .app-container .app-dropdown {
+  margin-top: -110px;
+} */
+
+/*request*/
+
+
+
+
+
+/*Services Status / Magaupdate yung service Provider*/
+.content-table tbody tr td .select {
+  border: 1px solid rgb(255, 255, 255);
+  height: 25px;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #a9c7d2;
+}

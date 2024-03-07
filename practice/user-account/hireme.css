@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    margin: auto;
+    background-color: rgb(225, 226, 227);
+}
+.head{
+    height: 90px;
+    width: 500px;
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 5px 5px 0px rgb(181, 179, 179);
+    background-color: white
+}
+.head h1{
+    text-align: center;
+    margin-top: 25px;
+}
+#hire-form {
+    position: relative;
+    margin: auto;
+    margin-top:5px;
+    background-color: rgb(255, 255, 255);
+    height: 455px;
+    width: 500px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 10px 10px 1px rgb(190, 190, 190);
+    background-image: url("1.png");
+    
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 30px 20px 30px;
+    width: 500px;
+}
+
+.top-form input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0px;
+}
+
+.top-form input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.top-form-id {
+    display: grid;
+    gap: 20px;
+}
+
+.top-form {
+    display: grid;
+    gap: 20px;
+}
+
+.low-form{
+    display: grid;
+    padding: 0px 30px 30px 30px;
+    gap: 20px;
+}
+
+.low-form .description > #text{
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    resize: none;
+}
+
+
+

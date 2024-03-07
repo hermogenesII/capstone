@@ -1,0 +1,14 @@
+body {
+  background-image: linear-gradient(to right, rgb(36, 115, 157), rgb(226, 146, 81));
+  font-family: "Poppins", sans-serif;
+}
+
+.decline-container {
+  border: 2px solid black;
+  width: 50%;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  margin-top: 200px;
+
+}

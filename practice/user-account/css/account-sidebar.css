@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+
+}
+
+body {
+  height: 100%;
+  background-color: #eaebeb86;
+  overflow-x: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  padding-left: 300px;
+  padding-right: 24px;
+  font-size: 17px;
+  height: auto;
+  /* overflow-x: scroll; */
+  /* width: fit-content; */
+}
+
+
+
+.sidebar-btn {
+  background-color: #598392;
+  width: 100%;
+  height: 40px;
+  display: none;
+  align-items: center;
+
+}
+
+.sidebar-btn>p {
+  text-decoration: none;
+}
+
+.sidebar-btn #sidebar-btn {
+  cursor: pointer;
+  margin-left: 20px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: blue;
+}
+
+.myaccount-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding-top: 10px;
+  width: 260px;
+  height: 100%;
+  background-color: #598392;
+  transition: 200ms linear;
+  font-family: sans-serif;
+  font-size: 17px;
+
+  overflow-y: auto;
+}
+
+.myaccount-container a {
+  text-decoration: none;
+}
+
+.system-title {
+  margin-top: 30px;
+}
+
+.system-title>a img {
+  height: 200px;
+  width: 220px;
+  overflow: hidden;
+  margin-left: 20px;
+  margin-top: -40px;
+}
+
+.myaccount-tabs {
+  /* margin-top: 11rem; */
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+
+.myaccount-tablinks,
+.sidebar .menu .sample {
+  display: flex;
+  width: calc(100% - 3rem);
+  background-color: #598392;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-left: 3rem;
+  padding: 10px 15px;
+  transition: all 300ms ease;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.myaccount-tablinks>i,
+.sample>i {
+  padding-right: 10px;
+}
+
+.myaccount-tablinks.active {
+  background-color: rgb(255, 255, 255);
+  padding: 15px 20px;
+  border-top-left-radius: .8rem;
+  border-bottom-left-radius: .8rem;
+  margin-left: 3rem;
+  width: calc(100% - 3rem);
+}
+
+.myaccount-tablinks:hover,
+.sidebar .menu .sample:hover {
+  margin-left: 3.5rem;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 25px;
+  border-top-left-radius: .8rem;
+  border-bottom-left-radius: .8rem;
+  width: calc(100% - 3.5rem);
+  color: black;
+}
+
+
+.acquired-services-dropdown {
+  display: none;
+}
+
+/* .myaccount-tabcontent {
+    padding-top: 50px;
+  } */
+
+#my-payment>h1 {
+  border-bottom: solid 1px;
+  box-sizing: border-box;
+}
+
+/*subscripiton*/
+.subs-container {
+  display: grid;
+  place-self: center;
+  box-shadow: 1px 10px 10px 1px rgb(239, 236, 236);
+}
+
+.payment-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+  margin-top: -10px;
+}
+
+.payment-list input {
+  padding: 50px;
+  background-color: #598392;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.payment-list input:hover {
+  background-color: white;
+}
+
+.subs-list {
+  margin-top: 50px;
+  box-shadow: 1px 10px 10px 1px gray;
+  height: 450px;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background-color: white;
+}
+
+.subs-list img {
+  width: 200px;
+  height: 200px;
+}
+
+.subs-list p {
+  text-align: center;
+}
+
+.subs-list .pay p {
+  color: black;
+  font-weight: bold;
+}
+
+.subs-list .amount p {
+  color: blue;
+  font-weight: bold;
+}
+
+
+
+@media (max-width: 1286px) {
+  section {
+    padding-left: 20px;
+    transition: .2s linear;
+    display: block;
+    height: 780px;
+  }
+
+  .myaccount-tabcontent {
+    padding-top: 40px;
+  }
+
+  .myaccount-container {
+    top: 40px;
+    left: -300px;
+  }
+
+  .myaccount-container.active {
+    left: 0;
+    transition: .2s linear;
+  }
+
+  .sidebar-btn {
+    position: fixed;
+    display: flex;
+  }
+}

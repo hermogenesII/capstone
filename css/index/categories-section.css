@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+#categories-page {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  background-color: rgb(247, 250, 250);
+}
+
+.categories-title {
+  margin-bottom: 20px;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 0;
+  row-gap: 40px;
+  margin: 5%;
+  border-radius: 20px;
+}
+
+.category {
+  border-radius: 20px;
+  margin: 30px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.category img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  height: 250px;
+}
+
+.category-border {
+  width: 100%;
+  height: 100%;
+}
+
+.category-description {
+  text-align: justify;
+  margin: 30px;
+  text-decoration: none;
+}
+
+.category-description h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  border-radius: 20px;
+}
+
+.layer:hover {
+  background: #83b5d190;
+}
+
+.layer h3 {
+  width: 90%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 13px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+
+
+@media (max-width: 1080px) {
+
+  .categories-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+
+  .categories-grid {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+  }
+
+}
+
+@media (max-width: 486px) {
+  .category>img {
+    height: 150px;
+  }
+
+  .categories-grid {
+    grid-template-columns: 1fr 1fr;
+    /* row-gap: 10px; */
+  }
+
+  .category-description>p {
+    height: 130px;
+    overflow-y: scroll;
+    box-shadow: 1px 10px 10px 1px grey;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+
+  .category-description>p::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .categories-grid {
+    row-gap: 10px;
+  }
+
+  .category-border {
+    width: 150px;
+  }
+}

@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: auto;
+    background-image: linear-gradient(to right, rgb(34, 99, 149), rgb(7, 189, 202));
+}
+
+.head {
+    height: auto;
+    width: 500px;
+    margin-top: 60px;
+    margin-left: 800px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 5px 5px 0px rgb(181, 179, 179);
+    background-color: white;
+}
+
+.head h3 {
+    color: red;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.head p {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.head h1 {
+    text-align: center;
+    color: #598392;
+    padding-top: 30px;
+}
+
+.image {
+    position: absolute;
+    /* border: solid 1px; */
+    width: 600px;
+    margin-left: 150px;
+}
+
+.image img {
+    height: 550px;
+    width: 550px;
+    margin-top: -160px;
+}
+
+.image h4 {
+    margin-bottom: 20px;
+}
+
+.image h1 {
+    margin-top: -70px;
+    margin-bottom: 20px;
+    text-align: left;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.image h4 {
+    letter-spacing: 1px;
+    color: white;
+}
+
+.image p {
+    letter-spacing: 1px;
+    margin-top: 10px;
+    color: white;
+}
+
+#hire-form {
+    position: relative;
+    margin-left: 800px;
+    margin-top: 3px;
+    background-color: white;
+    height: auto;
+    padding-top: 15px;
+    width: 500px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 10px 10px 1px rgb(190, 190, 190);
+}
+
+/* #hire-form label {
+    color: black;
+    margin-left: 30px;
+} */
+
+/* #hire-form input {
+    margin-bottom: -10px;
+} */
+
+#hire-form label i {
+    margin-right: 10px;
+    color: #598392;
+}
+
+.form-container {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    /* padding: 30px 30px 20px 30px; */
+    width: 500px;
+}
+
+.form-container .top-form-id {
+    display: flex;
+    flex-direction: column;
+}
+
+.name,
+.service-request {
+    margin-top: 10px;
+}
+
+.name,
+.location,
+.number,
+.service-request,
+.mode-service,
+.mode-payment,
+.schedule {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.service-request select,
+.mode-payment select,
+.mode-service select {
+    height: 30px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.address select {
+    width: 120px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.name input,
+.number input,
+.schedule input {
+    border: solid 1px;
+    height: 30px;
+    border-radius: 5px;
+    width: 250px;
+    padding: 0px 10px;
+}
+
+.number input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.location .address {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+
+.form-container .top-form-id .hide p {
+    color: black;
+    /* padding: 7px; */
+    /* text-align: left; */
+}
+
+.top-form input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0px;
+}
+
+.top-form input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.top-form select {
+    height: 30px;
+    border-radius: 5px;
+}
+
+.top-form-id {
+    display: grid;
+    gap: 20px;
+    text-align: left;
+}
+
+.top-form-id i {
+    color: #598392;
+    margin-right: 10px;
+}
+
+.top-form {
+    margin-top: -10px;
+    display: grid;
+    gap: 10px;
+}
+
+/* .top-form input {
+    border: solid 1px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 250px;
+    padding-left: 10px;
+} */
+
+.top-form #mos {
+    height: 30px;
+    border-radius: 5px;
+}
+
+.hire-form {
+    margin: 0px 20px;
+}
+
+.hire-form .hide,
+.hire-form .hide1 {
+    display: none;
+}
+
+.hire-form .dropdown-check:checked+.form-container .top-form-id .hide,
+.not-hide .dropdown-check1:checked~.hide1 {
+    display: block;
+}
+
+.low-form {
+    display: grid;
+    padding: 0px 30px 30px 30px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.low-form .other p {
+    margin-top: 8px;
+}
+
+.low-form .description>#text {
+    width: 100%;
+    height: 90px;
+    padding: 10px;
+    resize: none;
+    border: solid 1px;
+    background-color: transparent;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.low-form .buttons input,
+.low-form .buttons button {
+    height: 30px;
+    width: 70px;
+    border: 1px solid rgb(196, 195, 195);
+    margin-left: 225px;
+    background-color: #598392;
+    color: white;
+}
+
+.low-form .buttons input:hover,
+.low-form .buttons button:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.low-form .buttons .pula input,
+.low-form .buttons .pula button {
+    background-color: #598392;
+    margin-left: 140px;
+    position: absolute;
+    transition: 0.3s;
+    color: white;
+}
+
+.low-form .buttons .pula input:hover,
+.low-form .buttons .pula button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
